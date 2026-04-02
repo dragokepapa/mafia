@@ -1,25 +1,18 @@
 {
-  "name": "true-mafia-bot",
-  "description": "Telegram Mafia + Crocodile + Gallows Full Game Bot (r4rdsn fork)",
-  "keywords": ["telegram", "bot", "mafia", "crocodile", "gallows", "game"],
+  "name": "mafia-host-bot",
+  "description": "Telegram Mafia Bot",
   "buildpacks": [
     {
       "url": "heroku/python"
     }
   ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
   "env": {
     "TOKEN": {
-      "description": "Telegram Bot Token (@BotFather se)",
+      "description": "Your Telegram Bot Token",
       "required": true
     },
     "MONGO_URI": {
-      "description": "MongoDB Atlas Full Connection URI",
+      "description": "MongoDB Atlas URI",
       "required": true
     }
   }
